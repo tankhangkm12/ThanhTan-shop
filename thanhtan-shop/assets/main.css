@@ -4,6 +4,7 @@
 
 }
 .header__navbar {
+    position: relative;
     display: flex;
     justify-content: space-between;
 
@@ -32,6 +33,11 @@
 .header__navbar-item-link:hover{
     cursor: pointer;
     color: rgba(255,255,255,0.7);
+}
+
+.header__navbar-show-qr:hover
+.header__qr {
+    display:block;
 }
 
 .header__navbar-item {
@@ -64,4 +70,53 @@
 .header__navbar-icon:hover{
     cursor:pointer;
     color: rgba(255,255,255,0.7);
+}
+
+
+
+.header__qr {
+    background-color: var(--white-color);
+    width:230px;
+    height:230px;
+    position: absolute;
+    top: 120%;
+    left:1%;
+    right:0;
+    bottom:0;
+    padding:12px;
+    border-radius: 3px;
+    box-sizing: content-box;
+    display: none;
+    
+}
+
+.header__qr::before {
+    width:120%;
+    height:30%;
+    content: "";
+    position: absolute;
+    top: -50px;
+    bottom:0;
+    display: block;
+    box-sizing: content-box;
+}
+
+.qr-image {
+    width:100%
+}
+
+
+.header__qr-apps {
+    width: 12px;
+    width:100%
+}
+
+.header__qr-apps-dowload {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-dowload {
+    height: 17px;
+    margin:0 15px;
 }
